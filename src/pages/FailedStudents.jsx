@@ -27,7 +27,7 @@ const AssignmentsPageFailed = ({ teacherId }) => {
             try {
                 const cacheBuster = new Date().getTime();
                 console.log(`Fetching assignments for teacherId: ${teacherId}`);
-                const response = await fetch(`http://localhost:8000/api/studentsfailed/${teacherId}?cacheBuster=${cacheBuster}`);
+                const response = await fetch(`https://glowquester-backend.vercel.app/api/studentsfailed/${teacherId}?cacheBuster=${cacheBuster}`);
 
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);

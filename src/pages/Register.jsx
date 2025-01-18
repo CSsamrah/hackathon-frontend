@@ -29,7 +29,7 @@ const Register = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:8000/api/signup', {
+      const response = await fetch('https://glowquester-backend.vercel.app/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -97,8 +97,8 @@ const Register = () => {
             >
               <option value="">-- Select Class --</option>
               <option value="G-10">G-10</option>
-              <option value="Class 2">Class 2</option>
-              <option value="Class 3">Class 3</option>
+              {/* <option value="Class 2">Class 2</option>
+              <option value="Class 3">Class 3</option> */}
             </select>
           </div>
           <div className="user-role">

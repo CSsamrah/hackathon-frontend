@@ -26,7 +26,7 @@ const AssignmentsPage = ({ studentId }) => {
   useEffect(() => {
     const fetchAssignments = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/api/submitted/${studentId}`);
+        const response = await fetch(`https://glowquester-backend.vercel.app/api/submitted/${studentId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch assignments');
         }

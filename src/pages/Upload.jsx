@@ -31,7 +31,7 @@ export default function Upload() {
         }
 
         try {
-            const response = await fetch('http://localhost:8000/api/create', {
+            const response = await fetch('https://glowquester-backend.vercel.app/api/create', {
                 method: 'POST',
                 body: data,
             });

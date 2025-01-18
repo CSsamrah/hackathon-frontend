@@ -24,7 +24,7 @@ const AssignmentsPage = ({ teacherId }) => {
   useEffect(() => {
     const fetchAssignments = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/api/studentsSubmitted/${teacherId}`);
+        const response = await fetch(`https://glowquester-backend.vercel.app/api/studentsSubmitted/${teacherId}`);
         const result = await response.json();
 
         if (response.ok) {
@@ -47,7 +47,7 @@ const AssignmentsPage = ({ teacherId }) => {
   const handleMarksChange = async (submissionId, value) => {
     console.log("Updating marks for ID:", submissionId); // Debugging log
     try {
-      const response = await fetch(`http://localhost:8000/api/marks/${submissionId}`, {
+      const response = await fetch(`https://glowquester-backend.vercel.app/api/marks/${submissionId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ const AssignmentsPage = ({ teacherId }) => {
   const handleStatusChange = async (submissionId, value) => {
     console.log("Updating remarks for ID:", submissionId); // Debugging log
     try {
-      const response = await fetch(`http://localhost:8000/api/remarks/${submissionId}`, {
+      const response = await fetch(`https://glowquester-backend.vercel.app/api/remarks/${submissionId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -106,7 +106,7 @@ const AssignmentsPage = ({ teacherId }) => {
     }
 
     try {
-      const response = await fetch(`http://localhost:8000/api/getAssignment/${submissionId}`);
+      const response = await fetch(`https://glowquester-backend.vercel.app/api/getAssignment/${submissionId}`);
       const result = await response.json();
 
       if (response.ok) {

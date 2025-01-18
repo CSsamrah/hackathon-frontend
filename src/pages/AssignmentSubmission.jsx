@@ -18,7 +18,7 @@ const AssignmentSubmission = () => {
     useEffect(() => {
         const fetchAssignment = async () => {
             try {
-                const response = await fetch(`http://localhost:8000/api/particular/${assignmentId}`);
+                const response = await fetch(`https://glowquester-backend.vercel.app/api/particular/${assignmentId}`);
                 if (!response.ok) {
                     throw new Error('Assignment not found');
                 }
@@ -61,7 +61,7 @@ const AssignmentSubmission = () => {
         formData.append('title', assignment.title);
 
         try {
-            const response = await fetch('http://localhost:8000/api/submit', {
+            const response = await fetch('https://glowquester-backend.vercel.app/api/submit', {
                 method: 'POST',
                 body: formData,
             });

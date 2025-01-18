@@ -33,7 +33,7 @@ const AssignmentsWithLeaderboard = ({ studentId }) => {
     // Fetch assignments for the student's class
     const fetchAssignments = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/api/studentAssignments/${studentId}`);
+        const response = await fetch(`https://glowquester-backend.vercel.app/api/studentAssignments/${studentId}`);
         const data = await response.json();
         if (Array.isArray(data)) {
           setAssignments(data);
@@ -52,7 +52,7 @@ const AssignmentsWithLeaderboard = ({ studentId }) => {
 
   const handleViewLeaderboard = async (assignmentId, assignmentTitle) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/leaderboard/${assignmentId}`);
+      const response = await fetch(`https://glowquester-backend.vercel.app/api/leaderboard/${assignmentId}`);
       const data = await response.json();
 
       // Ensure `data` is an array

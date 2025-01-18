@@ -53,7 +53,7 @@ const Header = ({ userName }) => {
     }
 
     try {
-      const response = await fetch('http://localhost:8000/api/logout', {
+      const response = await fetch('https://glowquester-backend.vercel.app/api/logout', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
