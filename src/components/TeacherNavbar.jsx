@@ -55,7 +55,7 @@ const TeacherNavbar = ({ name }) => {
     }
 
     try {
-      const response = await fetch('https://glowquester-backend.vercel.app/api/logout', {
+      const response = await fetch('https://hackathon-backend-gamma.vercel.app/api/logout', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

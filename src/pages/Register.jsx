@@ -29,7 +29,7 @@ const Register = () => {
     }
 
     try {
-      const response = await fetch('https://glowquester-backend.vercel.app/api/signup', {
+      const response = await fetch('https://hackathon-backend-gamma.vercel.app/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

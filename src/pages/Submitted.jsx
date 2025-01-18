@@ -26,7 +26,7 @@ const AssignmentsPage = ({ studentId }) => {
   useEffect(() => {
     const fetchAssignments = async () => {
       try {
-        const response = await fetch(`https://glowquester-backend.vercel.app/api/submitted/${studentId}`);
+        const response = await fetch(`https://hackathon-backend-gamma.vercel.app/api/submitted/${studentId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch assignments');
         }
