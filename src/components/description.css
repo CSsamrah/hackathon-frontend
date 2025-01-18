@@ -1,0 +1,126 @@
+.mainDescription {
+  width: 70%;
+  margin: 20px 20px;
+  padding: 20px;
+  padding-bottom: 80px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.formBox {
+  margin-bottom: 20px;
+}
+
+.titleInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.descriptionBox {
+  width: 100%;
+}
+
+.descriptionInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.editorToolbar {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.editorToolbar button {
+  font-size: 16px;
+}
+
+.editorToolbar {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-top: 10px;
+}
+.selectedFile {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.selectedFile span {
+  flex-grow: 1;
+}
+
+.removeFileButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+  color: red;
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .mainDescription {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .titleInput {
+    font-size: 16px;
+  }
+
+  .descriptionInput {
+    font-size: 14px;
+  }
+
+  .editorToolbar {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .mainDescription {
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+    padding-bottom: 60px;
+  }
+
+  .titleInput {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .descriptionInput {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .editorToolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .editorToolbar button {
+    font-size: 14px;
+  }
+}

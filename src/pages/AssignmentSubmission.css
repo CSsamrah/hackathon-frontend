@@ -1,0 +1,233 @@
+.mainAssignDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header1 {
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.headH1 {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.content2 {
+    padding: 5rem;
+    width: 50rem;
+}
+
+.content2 h3 {
+    font-size: 2rem;
+    line-height: 5rem;
+}
+
+.mainP {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p1,
+.p2 {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.name {
+    font-weight: bolder;
+}
+
+.points {
+    color: gray;
+}
+
+.dueDate {
+    color: gray;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #8DC63F;
+    margin: 20px 0;
+}
+
+.description {
+    line-height: 1.8rem;
+}
+
+.your-work {
+    width: 18rem;
+    padding: 1.5rem;
+    box-shadow: 0 8px 8px 8px rgba(75, 75, 75, 0.1);
+    margin-right: 5rem;
+    margin-top: 5rem;
+}
+
+.work1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.status-missing {
+    color: rgb(201, 26, 26);
+}
+
+.status-submitted {
+    color: #8DC63F;
+}
+
+.assignBtn {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    margin-top: 1.8rem;
+}
+
+.add-or-create,
+.mark-as-done {
+    display: block;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 15rem;
+}
+
+.mark-as-done {
+    background-color: #8DC63F;
+}
+
+.add-or-create {
+    color: #8DC63F;
+    border: 1px solid #8DC63F;
+    background: white;
+}
+
+.add-or-create:hover,
+.mark-as-done:hover {
+    opacity: 0.8;
+}
+
+.crossBtn {
+    background: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.submitted-file {
+    display: flex;
+    margin: 5px 0;
+    background-color: #f1f1f1;
+    padding: 10px 10px;
+    border-radius: 4px;
+    width: 15rem;
+
+}
+
+.file-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: 15rem;
+
+}
+
+.delete-file {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(201, 26, 26);
+    font-size: 1.2rem;
+}
+
+.view-file-btn {
+    font-size: medium;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .mainAssignDiv {
+        display: block;
+        width: 100%;
+    }
+
+    .your-work {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .header1 {
+        position: relative;
+    }
+
+    .content2 {
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .add-or-create,
+    .mark-as-done {
+        width: 20rem;
+    }
+
+    .file-info {
+        width: 20rem;
+    }
+
+    .submitted-file {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .mainAssignDiv {
+        display: block;
+        width: 100%;
+    }
+
+    .your-work {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .header1 {
+        position: relative;
+    }
+
+    .content2 {
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .add-or-create,
+    .mark-as-done {
+        width: 20rem;
+    }
+
+    .file-info {
+        width: 20rem;
+    }
+
+    .submitted-file {
+        width: 20rem;
+    }
+}

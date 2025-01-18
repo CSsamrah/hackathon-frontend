@@ -1,0 +1,49 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.sidebar .form-control {
+    width: 100%;
+}
+
+.sidebar .rubric-button {
+    background-color: #007BFF;
+    color: white;
+    width: 100%;
+}
+
+.sidebar .rubric-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .sidebar .rubric-button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .sidebar .rubric-button {
+        padding: 8px;
+    }
+}

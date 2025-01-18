@@ -1,0 +1,135 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.header2 {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header2 h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.assign-button {
+    background-color: #007BFF;
+    color: white;
+    width: 150px;
+    padding: 30px 0px;
+    margin-right: 10px;
+}
+
+.assign-button:hover {
+    background-color: #0056b3;
+}
+
+.icondiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mainUpload {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2rem;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+/* upload.css */
+.selectedFile {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.selectedFile span {
+    flex-grow: 1;
+}
+
+.removeFileButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+    color: red;
+    font-size: 16px;
+}
+
+
+@media (max-width: 1200px) {
+    .mainUpload {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header2 {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 4rem;
+        margin-left: 4rem;
+
+    }
+
+    .header2 h1 {
+        font-size: 1.8em;
+    }
+
+    .assign-button {
+        margin-top: 15px;
+        width: 100px;
+        padding: 15px 0;
+    }
+
+    .container {
+        margin: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .mainUpload {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header2 {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 4rem;
+    }
+
+    .header2 h1 {
+        font-size: 1.8em;
+    }
+
+    .assign-button {
+        margin-top: 15px;
+        width: 100px;
+        padding: 15px 0;
+    }
+
+    .container {
+        margin: 0;
+    }
+}

@@ -1,0 +1,32 @@
+.fileLinkUploader {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.uploadContainer {
+    display: flex;
+    align-items: center;
+}
+
+.uploadButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.linkContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgb(211, 232, 232);
+    border-radius: 30px;
+}
+
+.linkIcon {
+    font-size: 24px;
+}
+
+.linkInput {
+    max-width: 300px;
+}
