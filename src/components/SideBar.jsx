@@ -16,7 +16,7 @@ export default function Sidebar({ handleInputChange }) {
                         <em>None</em>
                     </MenuItem>
                     <MenuItem value="G-10">G-10</MenuItem>
-                    <MenuItem value="G-12">G-12</MenuItem>
+                    {/* <MenuItem value="G-12">G-12</MenuItem> */}
                 </Select>
             </FormControl>
 
